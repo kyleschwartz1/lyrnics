@@ -28,18 +28,21 @@ Look like: https://www.invisionapp.com/-->
 						</button>
 					</div>
             <div class="collapse navbar-collapse" id="navbar-collapse">
-              <a class="navbar-brand" href="#">
-                <img alt="Brand" src="http://lorempixel.com/50/50" height=30px width=30px>
-              </a>
+              <div class="logo-margin">
+                <a class="navbar-brand" href="#">
+                  <img alt="Brand" src="LyrnicsLogo.png" height=50px width=50px>
+                </a>
+              </div>
   						<ul class="nav navbar-nav nav-styles" id="navbarLinks"> <!-- you can add style="..." to import temporary css -->
-                  <a href="https://google.com" class="link" style="margin-left:30px;">Home</a>
-  							  <a href="#" class="link">Songs</a>
-  							  <a href="#" class="link">Subjects</a>
-  						    <a href="#" class="link">Contact us</a>
-                  <a href="#" class="link">Log In</a>
-  						    <a href="#" class="link" style="padding: 0px 5px;">Sign Up</a>
+<!-- <ul> tag means it will be an unordered list, so to fix this add <li> tags to unsure that these elements are in a list, and fixes the spacing of the elements -->
+                  <li><a href="https://google.com" class="link" style="margin-left:30px;">Home</a></li>
+  							  <li><a href="#" class="link">Songs</a></li>
+  							  <li><a href="#" class="link">Subjects</a></li>
+  						    <li><a href="#" class="link">Contact us</a></li>
+                  <li><a href="#" class="link">Log In</a></li>
+  						    <li><a href="#" class="link">Sign Up</a></li>
   						</ul>
-              <form class="navbar-form navbar-right" role="search" style="margin-top:15px; margin-right:2px;">
+              <form class="navbar-form navbar-right" role="search" style="margin-top:25px; margin-right:2px;">
                 <div class="form-group">
                   <input type="text" class="form-control" placeholder="Search for Songs...">
                 </div>
@@ -67,6 +70,7 @@ Look like: https://www.invisionapp.com/-->
           </div>
         </div>
         <hr><!--<hr> Used to indicate a different section -->
+      <div class="container">
         <div class="section-1">
           <div class="container-fluid">
             <h1 style="font-size:100px; color:purple; opacity:0.75; text-align:center;">Lyrnics</h1>
@@ -157,6 +161,7 @@ Look like: https://www.invisionapp.com/-->
       <audio loop="loop" autoplay="autoplay" controls="controls"> <!-- controls shows the audio bar -->
       <source src="7thSymphony.mp3">
       </audio>
+    </div>
 
       <script src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
