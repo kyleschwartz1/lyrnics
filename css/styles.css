@@ -64,7 +64,7 @@ margin-top:10%;
 border: 3px solid #ffffff
 padding:10px;
 border-radius:15px;
-width:700px;
+width:100%; /*Originally was at 700px, but it messed up the spacing for phones, so I changed itto 100% and its better on mobile responive */
 letter-spacing:3px;
 font-size:25px;
 }
