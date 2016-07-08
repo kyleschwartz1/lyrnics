@@ -1,0 +1,142 @@
+body
+{
+  background-color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.button-center{
+  text-align: center;
+  position: relative;
+  z-index: 100;
+}
+
+.header-container{
+  width:100%;
+  height:550px;
+  border-left:none;
+  border-right:none;
+  position: relative;
+  padding: 20px;
+  margin-top: 65px;
+  z-index:1;
+}
+
+.video-container{
+  position: absolute;
+  top: 0%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow:hidden;
+}
+
+/*
+.video-container:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  (add an unwanted border, take this out)padding-right: 40px;
+  background: rgba(0, 0, 0, 0.5); Adds a greyish background, but changes the sight of the text...
+  (adds another unwanted border, take this out) border-radius: 5px;
+}*/
+
+video{
+  position:absolute;
+  z-index:-1;
+  opacity:0.65;
+  width:100%;
+}
+
+
+.vid-h3{
+color:#3cbc8d;
+z-index:1;
+text-align:center;
+margin-right:auto;
+margin-left:auto;
+margin-top:10%;
+border: 3px solid #ffffff
+padding:10px;
+border-radius:15px;
+width:700px;
+letter-spacing:3px;
+font-size:25px;
+}
+
+.border-right {
+    border-right: 1px solid #ddd;
+}
+
+.border-left{
+    border-left: 1px solid #ddd;
+}
+
+.navbar-default{
+/*margin-top:10px;
+position: fixed;*/
+z-index:99999;
+width:98%;
+top: 0;
+height:65px;
+}
+
+.nav-styles{
+  margin-top:15px;
+  font-size:20px;
+}
+
+.nav-styles a{
+  color:black;
+  text-transform:uppercase;
+  font-weight:lighter;
+}
+
+.nav-styles a::after {
+	content: ' ';
+	padding: 0px 25px;
+  display: inline;
+}
+
+#navbarLinks a:hover {
+	background-color:transparent;
+	color: #FFEF4A;
+  text-decoration: none;
+}
+
+.filler-space{
+  background-color: white;
+  height:65px;
+}
+
+.section-1{
+  background-color:white;
+  height:100%;
+}
+
+.section-2{
+  background-color:green;
+  height:100%;
+}
+
+.row-img {
+  margin-top: 20px;
+	border-radius: 5%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 250px;
+	width: 250px;
+}
+
+.row-img:hover{
+ opacity:0.5;
+}
+
+.p-fix{
+  margin-top:4px;
+  margin-bottom: 20px;
+  color:black;
+  text-transform:uppercase;
+  font-weight:lighter;
+}
