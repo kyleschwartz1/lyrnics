@@ -156,3 +156,12 @@ height:65px;
   max-width: 330px;
   margin: 0 auto;
 }
+
+.form-horizontal{
+  padding-top: 100px;
+  max-width: 330px;
+}
+h1{
+  padding-top: 100px;
+  text-align: center;
+}
