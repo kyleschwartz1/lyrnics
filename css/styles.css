@@ -144,3 +144,15 @@ height:65px;
   text-transform:uppercase;
   font-weight:lighter;
 }
+
+.form-signin{
+  padding-top: 100px;
+  max-width: 330px;
+  margin: 0 auto;
+}
+
+.form-signup{
+  padding-top: 100px;
+  max-width: 330px;
+  margin: 0 auto;
+}
