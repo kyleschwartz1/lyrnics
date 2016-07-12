@@ -174,3 +174,21 @@ h2{
   text-align: center;
   font-size: 50px;
 }
+.button-stream{
+  font-size: 25px;
+}
+.button-explore{
+  font-size: 25px;
+}
+.song-container .artwork,
+.song-container .song-info{
+  float: left;
+}
+
+.sample{
+  padding-top: 40px
+}
+
+.song-info{
+  padding-left: 10px
+}
