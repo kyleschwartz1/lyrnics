@@ -180,9 +180,16 @@ h2{
 .button-explore{
   font-size: 25px;
 }
+.song-container {
+  display: table;
+  width: 100%
+}
+.song-container .song-info {
+  width: 100%;
+}
 .song-container .artwork,
 .song-container .song-info{
-  float: left;
+  display: table-cell;
 }
 
 .sample{
@@ -190,5 +197,31 @@ h2{
 }
 
 .song-info{
-  padding-left: 10px
+  padding-left: 10px;
+  font-size: 20px;
+}
+.hero-container{
+  margin-top: 65px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #eee;
+  color: #000;
+  display: table;
+  width: 100%;
+}
+.hero-container .icon{
+  text-align: center;
+}
+.hero-container .icon img{
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.hero-container .icon,
+.hero-container .info-tag{
+  display: table-cell;
+}
+.hero-container .info-tag{
+  padding-left: 30px;
+  width: 100%;
+  vertical-align: middle;
 }
