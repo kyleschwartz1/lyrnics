@@ -124,6 +124,8 @@
               </div>
               <div>
                 <div id="waveform"></div>
+
+                <button class="button" onclick="wavesurfer.playPause()"> play/pause </button>
             </div>
               <div class="row">
                   <div class="col-md-12">
@@ -156,9 +158,7 @@
               progressColor: 'purple'
           });
           wavesurfer.load("bugs.mp3");
-          wavesurfer.on('ready', function()) {
-            wavesurfer.play();
-          }
+
           $("#avatar-1").fileinput({
               overwriteInitial: true,
               maxFileSize: 1500,
