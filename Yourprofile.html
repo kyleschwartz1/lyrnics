@@ -11,6 +11,7 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.3.3/css/fileinput.min.css">
         <link rel="stylesheet" href="css/styles.css">
         <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
     </head>
@@ -81,6 +82,13 @@
                     <div class="modal-body">
                       <label class="control-label">Select File</label>
                       <input id="input-7" name="input7[]" multiple type="file" class="file file-loading" data-allowed-file-extensions='["csv", "txt"]'>
+                      <div id="kv-avatar-errors-1" class="center-block" style="width:800px;display:none"></div>
+                      <form class="text-center" action="/avatar_upload.php" method="post" enctype="multipart/form-data">
+                          <div class="kv-avatar center-block" style="width:200px">
+                              <input id="avatar-1" name="avatar-1" type="file" class="file-loading">
+                          </div>
+                          <!-- include other inputs if needed and include a form submit (save) button -->
+                      </form>
                     </div>
 
                     <div class="modal-footer">
@@ -111,6 +119,9 @@
                 </div>
               </div>
               <div class="row">
+                <div id="waveform"></div>
+            </div>
+              <div class="row">
                   <div class="col-md-12">
                     <button class="btn btn-default btn-xs">
                       Like
@@ -132,5 +143,31 @@
 
         <script src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.3.3/js/fileinput.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.0.52/wavesurfer.min.js"></script>
+        <script>
+          var wavesurfer = WaveSurfer.create({
+              container: '#waveform',
+              waveColor: 'violet',
+              progressColor: 'purple'
+          });
+          wavesurfer.load("wave.wav");
+          $("#avatar-1").fileinput({
+              overwriteInitial: true,
+              maxFileSize: 1500,
+              showClose: false,
+              showCaption: false,
+              browseLabel: '',
+              removeLabel: '',
+              browseIcon: '<i class="glyphicon glyphicon-folder-open"></i>',
+              removeIcon: '<i class="glyphicon glyphicon-remove"></i>',
+              removeTitle: 'Cancel or reset changes',
+              elErrorContainer: '#kv-avatar-errors-1',
+              msgErrorClass: 'alert alert-block alert-danger',
+              defaultPreviewContent: '<img src="http://placehold.it/200x200" alt="Your Avatar" style="width:160px">',
+              layoutTemplates: {main2: '{preview} {remove} {browse}'},
+              allowedFileExtensions: ["jpg", "png", "gif"]
+          });
+        </script>
     </body>
 </html>
