@@ -156,6 +156,9 @@
               progressColor: 'purple'
           });
           wavesurfer.load("bugs.mp3");
+          wavesurfer.on('ready', function()) {
+            wavesurfer.play();
+          }
           $("#avatar-1").fileinput({
               overwriteInitial: true,
               maxFileSize: 1500,
