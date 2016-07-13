@@ -256,3 +256,7 @@ h3{
 .likes-song-container .song-info {
   width: 80%;
 }
+
+.modal-custom{
+  margin-top: 100px;
+}

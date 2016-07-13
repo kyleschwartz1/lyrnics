@@ -66,25 +66,26 @@
                 <br>
                 <!-- Button trigger modal -->
               <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModal">
-                Upload song
+                Upload your lyrnics
               </button>
 
               <!-- Modal -->
               <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                <div class="modal-dialog" role="document">
+                <div class="modal-dialog modal-custom" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                      <h4 class="modal-title" id="myModalLabel">Upload song</h4>
+                      <h4 class="modal-title" id="myModalLabel">Upload your lyrnics</h4>
                     </div>
 
                     <div class="modal-body">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium maxime laudantium, nihil dolores ullam? Distinctio a consectetur, alias totam ipsam quibusdam harum ea rem nam. Fuga ullam cumque rem consequuntur.
+                      <label class="control-label">Select File</label>
+                      <input id="input-7" name="input7[]" multiple type="file" class="file file-loading" data-allowed-file-extensions='["csv", "txt"]'>
                     </div>
 
                     <div class="modal-footer">
                       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
+                      <button type="button" class="btn btn-primary">Finish upload</button>
                     </div>
                   </div>
                 </div>
