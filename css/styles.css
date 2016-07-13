@@ -250,7 +250,6 @@ h3{
 .likes-song-container .artwork,
 .likes-song-container .song-info{
   display: table-cell;
-  float: left;
 }
 
 .likes-song-container .song-info {
@@ -285,4 +284,8 @@ h3{
     right:10px;
     width:100px;
     height:30px;
+}
+
+.song-art{
+  cursor: pointer;
 }
