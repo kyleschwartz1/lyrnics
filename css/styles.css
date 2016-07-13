@@ -236,5 +236,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 h3{
-  font-size: 40px
+  font-size: 40px;
+  padding-left: 40px;
+}
+
+.likes-song-container {
+  padding-top: 40px;
+  padding-left: 40px;
+  display: table;
+  width: 100%;
+}
+
+.likes-song-container .artwork,
+.likes-song-container .song-info{
+  display: table-cell;
+  float: left;
+}
+
+.likes-song-container .song-info {
+  width: 80%;
 }
