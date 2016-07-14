@@ -289,3 +289,7 @@ h3{
 .song-art{
   cursor: pointer;
 }
+
+#waveform{
+  width: 100%
+}
