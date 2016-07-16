@@ -301,18 +301,8 @@ h3{
   height: 250px;
 }
 
-.Nasir img{
+.Nasir .Molly .Persia .Heidy {
   border-radius:50%;
-}
-
-.Molly img{
-  border-radius:50%;
-}
-
-.Heidy img{
-  border-radius:50%;
-}
-
-.Persia img{
-  border-radius: 50%;
+  height: 200px;
+  width: 200px;
 }
