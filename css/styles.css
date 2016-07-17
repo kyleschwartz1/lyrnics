@@ -307,8 +307,14 @@ h3{
   width: 200px;
 }
 
-.collapseExample{
-  background-color:transparent;
-  height: 200px;
-  width: 190px;
+.btn-primary:hover{
+  color: white;
+  background-color: white;
+  border-color: white;
+}
+
+.btn-primart{
+  color: white;
+  background-color: white;
+  border-color: white;
 }
