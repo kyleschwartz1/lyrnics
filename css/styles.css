@@ -307,20 +307,31 @@ h3{
   width: 200px;
 }
 
-.btn-primary:hover{
+.btn-subject:hover{
   color: white;
   background-color: white;
   border-color: white;
 }
 
-.btn-primary{
+.btn-subject{
   color: white;
   background-color: blue;
   border-color: white;
 }
 
-#btn-primary{
+#btn-subject{
   color: white;
   background-color: white;
   border-color: white;
+}
+
+.btn-log{
+  background-color: blue;
+  color: white;
+}
+
+#dropdownMenu1{
+  font-size: 30px;
+  font-style: bold;
+  color: black;
 }

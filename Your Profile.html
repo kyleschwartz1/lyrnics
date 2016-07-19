@@ -54,7 +54,7 @@
         <div class="hero-container">
           <div class="icon">
             <img src="LyrnicsLogo.png" alt="icon" />
-            <a class="btn btn-log"> change image</a>
+            <a class="btn btn-primary"> change image</a>
           </div>
           <div class="info-tag">
             <div class="row">
@@ -63,10 +63,10 @@
                 <p class="Location">Location</p>
               </div>
               <div class="col-lg-3 ">
-                <a class="btn btn-log Edit-your-profile">Edit your profile</a>
+                <a class="btn btn-primary Edit-your-profile">Edit your profile</a>
                 <br>
                 <!-- Button trigger modal -->
-              <button type="button" class="btn btn-log btn-md" data-toggle="modal" data-target="#myModal">
+              <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModal">
                 Upload your lyrnics
               </button>
 
@@ -80,38 +80,20 @@
                     </div>
 
                     <div class="modal-body">
-                      <label class="control-label">Choose your Artwork:</label>
+                      <label class="control-label">Select File</label>
+                      <input id="input-7" name="input7[]" multiple type="file" class="file file-loading" data-allowed-file-extensions='["csv", "txt"]'>
+                      <div id="kv-avatar-errors-1" class="center-block" style="width:800px;display:none"></div>
                       <form class="text-center" action="/avatar_upload.php" method="post" enctype="multipart/form-data">
                           <div class="kv-avatar center-block" style="width:200px">
                               <input id="avatar-1" name="avatar-1" type="file" class="file-loading">
                           </div>
                           <!-- include other inputs if needed and include a form submit (save) button -->
                       </form>
-                      <label class="control-label">Select File:</label>
-                      <input id="input-7" name="input7[]" multiple type="file" class="file file-loading" data-allowed-file-extensions='["csv", "txt"]'>
-                      <div id="kv-avatar-errors-1" class="center-block" style="width:800px;display:none"></div>
-
-                      <div class="form-group">
-                        <label for="usr">Lyrics:</label>
-                        <input type="text" class="form-control" id="usr">
-                      </div>
-
-                      <div class="form-group">
-                        <label for="sel1">Subject:</label>
-                        <select class="form-control" id="sel1">
-                          <option>Math</option>
-                          <option>Science</option>
-                          <option>History</option>
-                          <option>English</option>
-                          <option>Language</option>
-                          <option>Other</option>
-                        </select>
-                      </div>
                     </div>
 
                     <div class="modal-footer">
                       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-log">Finish upload</button>
+                      <button type="button" class="btn btn-primary">Finish upload</button>
                     </div>
                   </div>
                 </div>
@@ -120,7 +102,7 @@
             </div>
           </div>
         </div>
-        <h3>Lyrnics that you've bought:</h3>
+        <h3>Lyrnics that you've bought</h3>
         <!--songs on your profile-->
           <div class="likes-song-container clearfix">
             <div class="artwork">
