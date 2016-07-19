@@ -122,9 +122,10 @@
         </div>
         <h3>Lyrnics that you've bought:</h3>
         <!--songs on your profile-->
-          <div class="likes-song-container clearfix">
+        <div class="likes-song-container clearfix">
+          <div class="row"
             <div class="artwork">
-              <img class="song-art" src="LyrnicsLogo.jpg" onclick="wavesurfer.playPause()" alt="artwork">
+              <img class="song-art" src="LyrnicsLogo.jpg" onclick="wavesurfer.playPause()" alt="artwork"></img>
               <div id="img_container">
               </div>
             </div>
@@ -160,6 +161,49 @@
               </div>
             </div>
           </div>
+        </div>
+
+            <div class="likes-song-container clearfix">
+              <div class="row"
+                <div class="artwork">
+                  <img class="song-art" src="LyrnicsLogo.jpg" onclick="wavesurfer.playPause()" alt="artwork"></img>
+                  <div id="img_container">
+                  </div>
+                </div>
+                <div class="song-info">
+                  <div class="row">
+                    <div class="col-md-9">
+                      <p class="User-name">User name</p>
+                      <p class="Sont-title">Song title</p>
+                    </div>
+                    <div class="col-sm-3 ">
+                        <p>Subject</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div id="sample"></div>
+                </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                        <button class="btn btn-default btn-xs">
+                          Like
+                        </button>
+                        <button class="btn btn-default btn-xs">
+                          Report
+                        </button>
+                      </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <button class="btn btn-default btn-xs">
+                        Lyrics
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
         <script src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -172,6 +216,14 @@
               progressColor: 'purple'
           });
           wavesurfer.load("bugs.mp3");
+
+          var wavesurfer = WaveSurfer.create({
+              container: '#sample',
+              waveColor: 'violet',
+              progressColor: 'purple'
+          });
+          wavesurfer.load("War-Song.wav");
+
 
           $("#avatar-1").fileinput({
               overwriteInitial: true,
