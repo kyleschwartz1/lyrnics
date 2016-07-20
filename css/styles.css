@@ -310,13 +310,13 @@ h3{
 .btn-subject:hover{
   color: white;
   background-color: white;
-  border-color: white;
+  border-color: blue;
 }
 
 .btn-subject{
   color: white;
   background-color: blue;
-  border-color: white;
+  border-color: blue;
 }
 
 #btn-subject{
