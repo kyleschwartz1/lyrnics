@@ -11,7 +11,7 @@ margin-top:-10px;
 .button-center{
   text-align: center;
   position: relative;
-  z-index: 100;
+  z-index: 50;
 }
 
 .header-container{
